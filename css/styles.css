@@ -1,0 +1,59 @@
+body { 
+  font-family: 'Inter', sans-serif; 
+}
+
+header {
+  position: fixed; 
+  top: 0; 
+  left: 0; 
+  right: 0; 
+  z-index: 50;
+  background: rgba(17,23,34,0.92);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+}
+
+.dot-bg {
+  background-image: radial-gradient(rgba(255,255,255,0.05) 1px, transparent 1px);
+  background-size: 26px 26px;
+}
+
+.popular {
+  transform: scale(1.05);
+  box-shadow: 0 24px 60px rgba(74,108,247,0.35);
+}
+
+@keyframes fadeUp {
+  from { 
+    opacity: 0;
+    transform: translateY(24px); 
+  }
+  to { 
+    opacity: 1;
+    transform: translateY(0); 
+  }
+}
+
+.fade { 
+  animation: fadeUp 0.7s ease both; 
+}
+
+.delay-1 { 
+  animation-delay: 0.1s; 
+}
+
+.delay-2 { 
+  animation-delay: 0.25s; 
+}
+
+.delay-3 { 
+  animation-delay: 0.4s; 
+}
+
+#mobile-menu { 
+  display: none; 
+}
+
+#mobile-menu.open { 
+  display: flex; 
+}
